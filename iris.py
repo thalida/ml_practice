@@ -76,7 +76,7 @@ def init():
     # there are 120 examples... so move the 1 to the end and get 201? lolololol
     # magic is magic is magic
     # --------------------------------------------------------------------------
-    num_epochs = 201
+    num_epochs = 180
 
     for epoch in range(num_epochs):
       epoch_loss_avg = tfe.metrics.Mean()
