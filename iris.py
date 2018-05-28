@@ -53,10 +53,10 @@ def init():
     # of the neural network requires a mixture of knowledge and experimentation. 
     # As a rule of thumb, increasing the number of hidden layers and neurons 
     # typically creates a more powerful model, which requires more data to train 
-    # effectivel
+    # effectively
     # --------------------------------------------------------------------------
     model = tf.keras.Sequential([
-      tf.keras.layers.Dense(10, activation="relu", input_shape=(4,)),  # input shape required
+      tf.keras.layers.Dense(10, activation="relu", input_shape=(4,)),  # 4 === # of features input shape required
       tf.keras.layers.Dense(10, activation="relu"),
       tf.keras.layers.Dense(3) # 3 === the number of labels
     ])
